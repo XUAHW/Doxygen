@@ -1,0 +1,23 @@
+\doxysection{Exceptions.\+h}
+\hypertarget{_exceptions_8h_source}{}\label{_exceptions_8h_source}\index{code/Exceptions.h@{code/Exceptions.h}}
+\mbox{\hyperlink{_exceptions_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_network_exception}{NetworkException}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_network_exception_aef0219d5da0b7dc29ef06daba7d942d9}{NetworkException}}(\textcolor{keyword}{const}\ std::string\&\ message)\ :\ msg(message)\ \{\}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_network_exception_ab767f8041dcdfefcafe25cc71dfa280c}{what}}()\ const\ noexcept\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ msg.c\_str();}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ std::string\ msg;}
+\DoxyCodeLine{00036\ \};}
+
+\end{DoxyCode}

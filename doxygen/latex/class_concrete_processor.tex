@@ -1,0 +1,92 @@
+\doxysection{Concrete\+Processor Class Reference}
+\hypertarget{class_concrete_processor}{}\label{class_concrete_processor}\index{ConcreteProcessor@{ConcreteProcessor}}
+
+
+Implements the \doxylink{class_i_processor}{IProcessor} interface to process string data.  
+
+
+Inheritance diagram for Concrete\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_concrete_processor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_concrete_processor_a29699ca08578345ed666dab5d991cf34}{initialize}} () override
+\begin{DoxyCompactList}\small\item\em Initializes the processor specifically for string data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_concrete_processor_a209cb6609ace272034d4bacd8be936e8}{process}} (const std\+::string \&data) override
+\begin{DoxyCompactList}\small\item\em Processes the input string data and modifies it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_concrete_processor_a44be2e7fb955e99ee29943ed45640c25}{cleanup}} () override
+\begin{DoxyCompactList}\small\item\em Cleans up any resources used by the string processor. \end{DoxyCompactList}\item 
+\Hypertarget{class_concrete_processor_af97ffddf1783bb4871dd05bde87d9754}\label{class_concrete_processor_af97ffddf1783bb4871dd05bde87d9754} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Concrete\+Processor} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor ensures proper cleanup of derived classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_processor}{IProcessor}}}
+
+
+\doxysubsection{Detailed Description}
+Implements the \doxylink{class_i_processor}{IProcessor} interface to process string data. 
+
+\doxylink{class_concrete_processor}{Concrete\+Processor} provides a specific algorithm to handle string manipulation and processing based on the \doxylink{class_i_processor}{IProcessor} interface. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concrete_processor_a44be2e7fb955e99ee29943ed45640c25}\index{ConcreteProcessor@{ConcreteProcessor}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!ConcreteProcessor@{ConcreteProcessor}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily \label{class_concrete_processor_a44be2e7fb955e99ee29943ed45640c25} 
+void Concrete\+Processor\+::cleanup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Cleans up any resources used by the string processor. 
+
+
+
+Implements \mbox{\hyperlink{class_i_processor_a022604253cf116b37184105a8e16d155}{IProcessor}}.
+
+\Hypertarget{class_concrete_processor_a29699ca08578345ed666dab5d991cf34}\index{ConcreteProcessor@{ConcreteProcessor}!initialize@{initialize}}
+\index{initialize@{initialize}!ConcreteProcessor@{ConcreteProcessor}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_concrete_processor_a29699ca08578345ed666dab5d991cf34} 
+bool Concrete\+Processor\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initializes the processor specifically for string data. 
+
+\begin{DoxyReturn}{Returns}
+True if initialization is successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_processor_a1a5a1886cff3f68a59c3d6f0125a6eaf}{IProcessor}}.
+
+\Hypertarget{class_concrete_processor_a209cb6609ace272034d4bacd8be936e8}\index{ConcreteProcessor@{ConcreteProcessor}!process@{process}}
+\index{process@{process}!ConcreteProcessor@{ConcreteProcessor}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{class_concrete_processor_a209cb6609ace272034d4bacd8be936e8} 
+bool Concrete\+Processor\+::process (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Processes the input string data and modifies it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The string data to be processed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if processing is successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_processor_ae9c8498a8e8380fa30c4fd840dd4bafe}{IProcessor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/\mbox{\hyperlink{_concrete_implementation_8cpp}{Concrete\+Implementation.\+cpp}}\end{DoxyCompactItemize}

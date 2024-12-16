@@ -1,0 +1,68 @@
+\doxysection{Network\+Exception Class Reference}
+\hypertarget{class_network_exception}{}\label{class_network_exception}\index{NetworkException@{NetworkException}}
+
+
+Exception for network-\/related errors.  
+
+
+
+
+{\ttfamily \#include $<$Exceptions.\+h$>$}
+
+Inheritance diagram for Network\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_network_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_network_exception_aef0219d5da0b7dc29ef06daba7d942d9}{Network\+Exception}} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Constructs a new Network Exception with the given message. \end{DoxyCompactList}\item 
+virtual const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_network_exception_ab767f8041dcdfefcafe25cc71dfa280c}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Returns a description of the exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Exception for network-\/related errors. 
+
+This exception is thrown when there are network failures such as disconnections or timeouts. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_network_exception_aef0219d5da0b7dc29ef06daba7d942d9}\index{NetworkException@{NetworkException}!NetworkException@{NetworkException}}
+\index{NetworkException@{NetworkException}!NetworkException@{NetworkException}}
+\doxysubsubsection{\texorpdfstring{NetworkException()}{NetworkException()}}
+{\footnotesize\ttfamily \label{class_network_exception_aef0219d5da0b7dc29ef06daba7d942d9} 
+Network\+Exception\+::\+Network\+Exception (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructs a new Network Exception with the given message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The error message that describes the failure. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_network_exception_ab767f8041dcdfefcafe25cc71dfa280c}\index{NetworkException@{NetworkException}!what@{what}}
+\index{what@{what}!NetworkException@{NetworkException}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily \label{class_network_exception_ab767f8041dcdfefcafe25cc71dfa280c} 
+virtual const char \texorpdfstring{$\ast$}{*} Network\+Exception\+::what (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Returns a description of the exception. 
+
+\begin{DoxyReturn}{Returns}
+A const character pointer to the error message. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/\mbox{\hyperlink{_exceptions_8h}{Exceptions.\+h}}\end{DoxyCompactItemize}

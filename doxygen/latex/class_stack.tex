@@ -1,0 +1,94 @@
+\doxysection{Stack\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_stack}{}\label{class_stack}\index{Stack$<$ T $>$@{Stack$<$ T $>$}}
+
+
+A generic stack class.  
+
+
+
+
+{\ttfamily \#include $<$Template\+Features.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_stack_a7b0f0506fd1cd7ec5756bb2b51ff908d}{push}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Pushes an element onto the stack. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_stack_aa2ea0e8c3293648589dd734d52487408}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Removes the top element of the stack. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_stack_a7ec1c3bd7b5aa9036fba8766ce9dad8e}{peek}} () const
+\begin{DoxyCompactList}\small\item\em Gets the top element of the stack without removing it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Stack$<$ T $>$}
+A generic stack class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of elements stored in the stack.\\
+\hline
+\end{DoxyTemplParams}
+This template class provides a simple stack data structure implementation, which supports basic operations such as push, pop, and peek. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_stack_a7ec1c3bd7b5aa9036fba8766ce9dad8e}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!peek@{peek}}
+\index{peek@{peek}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily \label{class_stack_a7ec1c3bd7b5aa9036fba8766ce9dad8e} 
+template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_stack}{Stack}}$<$ T $>$\+::peek (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the top element of the stack without removing it. 
+
+\begin{DoxyReturn}{Returns}
+The element at the top of the stack. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if the stack is empty. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_stack_aa2ea0e8c3293648589dd734d52487408}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!pop@{pop}}
+\index{pop@{pop}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{class_stack_aa2ea0e8c3293648589dd734d52487408} 
+template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_stack}{Stack}}$<$ T $>$\+::pop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes the top element of the stack. 
+
+\begin{DoxyReturn}{Returns}
+The element at the top of the stack. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if the stack is empty. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_stack_a7b0f0506fd1cd7ec5756bb2b51ff908d}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!push@{push}}
+\index{push@{push}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_stack_a7b0f0506fd1cd7ec5756bb2b51ff908d} 
+template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_stack}{Stack}}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{const T \&}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pushes an element onto the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to push onto the stack. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/\mbox{\hyperlink{_template_features_8h}{Template\+Features.\+h}}\end{DoxyCompactItemize}

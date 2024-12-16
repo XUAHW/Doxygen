@@ -1,0 +1,38 @@
+\doxysection{Template\+Features.\+h}
+\hypertarget{_template_features_8h_source}{}\label{_template_features_8h_source}\index{code/TemplateFeatures.h@{code/TemplateFeatures.h}}
+\mbox{\hyperlink{_template_features_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_stack}{Stack}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_stack_a7b0f0506fd1cd7ec5756bb2b51ff908d}{push}}(\textcolor{keyword}{const}\ T\&\ value)\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ elements.push\_back(value);}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \ \ T\ \mbox{\hyperlink{class_stack_aa2ea0e8c3293648589dd734d52487408}{pop}}()\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (elements.empty())\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}Stack<>::pop():\ empty\ stack"{}});}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ T\ value\ =\ elements.back();}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ elements.pop\_back();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ value;}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ T\ \mbox{\hyperlink{class_stack_a7ec1c3bd7b5aa9036fba8766ce9dad8e}{peek}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (elements.empty())\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}Stack<>::peek():\ empty\ stack"{}});}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ elements.back();}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00056\ \ \ \ \ std::vector<T>\ elements;\ }
+\DoxyCodeLine{00057\ \};}
+
+\end{DoxyCode}

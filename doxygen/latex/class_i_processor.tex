@@ -1,0 +1,101 @@
+\doxysection{IProcessor Class Reference}
+\hypertarget{class_i_processor}{}\label{class_i_processor}\index{IProcessor@{IProcessor}}
+
+
+Interface for processing data within the application.  
+
+
+
+
+{\ttfamily \#include $<$Abstract\+Base.\+h$>$}
+
+Inheritance diagram for IProcessor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_processor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_i_processor_a1a5a1886cff3f68a59c3d6f0125a6eaf}{initialize}} ()=0
+\begin{DoxyCompactList}\small\item\em Initializes the processor with necessary resources. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_processor_ae9c8498a8e8380fa30c4fd840dd4bafe}{process}} (const std\+::string \&data)=0
+\begin{DoxyCompactList}\small\item\em Processes the data and produces results. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_processor_a022604253cf116b37184105a8e16d155}{cleanup}} ()=0
+\begin{DoxyCompactList}\small\item\em Cleans up resources used by the processor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for processing data within the application. 
+
+This abstract class defines the standard operations required for data processing across different modules of the application. Concrete classes must implement all the pure virtual functions defined here. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_processor_a022604253cf116b37184105a8e16d155}\index{IProcessor@{IProcessor}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!IProcessor@{IProcessor}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily \label{class_i_processor_a022604253cf116b37184105a8e16d155} 
+virtual void IProcessor\+::cleanup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cleans up resources used by the processor. 
+
+\begin{DoxyNote}{Note}
+This method must be implemented by derived classes. 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_concrete_processor_a44be2e7fb955e99ee29943ed45640c25}{Concrete\+Processor}}.
+
+\Hypertarget{class_i_processor_a1a5a1886cff3f68a59c3d6f0125a6eaf}\index{IProcessor@{IProcessor}!initialize@{initialize}}
+\index{initialize@{initialize}!IProcessor@{IProcessor}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_i_processor_a1a5a1886cff3f68a59c3d6f0125a6eaf} 
+virtual bool IProcessor\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initializes the processor with necessary resources. 
+
+\begin{DoxyReturn}{Returns}
+True if initialization is successful, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This method must be implemented by derived classes. 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_concrete_processor_a29699ca08578345ed666dab5d991cf34}{Concrete\+Processor}}.
+
+\Hypertarget{class_i_processor_ae9c8498a8e8380fa30c4fd840dd4bafe}\index{IProcessor@{IProcessor}!process@{process}}
+\index{process@{process}!IProcessor@{IProcessor}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{class_i_processor_ae9c8498a8e8380fa30c4fd840dd4bafe} 
+virtual bool IProcessor\+::process (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Processes the data and produces results. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Input data to be processed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if data processing is successful, false otherwise. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This method must be implemented by derived classes. 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_concrete_processor_a209cb6609ace272034d4bacd8be936e8}{Concrete\+Processor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/\mbox{\hyperlink{_abstract_base_8h}{Abstract\+Base.\+h}}\end{DoxyCompactItemize}

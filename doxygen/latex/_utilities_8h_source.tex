@@ -1,0 +1,21 @@
+\doxysection{Utilities.\+h}
+\hypertarget{_utilities_8h_source}{}\label{_utilities_8h_source}\index{code/Utilities.h@{code/Utilities.h}}
+\mbox{\hyperlink{_utilities_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00017\ std::vector<std::string>\ \mbox{\hyperlink{_utilities_8h_a233792dfb229dfb76da86d95fd5dc81b}{split}}(\textcolor{keyword}{const}\ std::string\&\ str,\ \textcolor{keywordtype}{char}\ delimiter)\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ std::vector<std::string>\ elements;}
+\DoxyCodeLine{00019\ \ \ \ \ std::stringstream\ ss(str);}
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ item;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordflow}{while}\ (getline(ss,\ item,\ delimiter))\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ elements.push\_back(item);}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordflow}{return}\ elements;}
+\DoxyCodeLine{00025\ \}}
+
+\end{DoxyCode}

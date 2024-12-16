@@ -1,0 +1,59 @@
+\doxysection{code/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{code/main.cpp@{code/main.cpp}}
+
+
+Main entry point of the application.  
+
+
+{\ttfamily \#include "{}Business\+Logic.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{main_8cpp_a9560c03f9cf3233bf8a460b48caa0c93}{setup\+Environment}} (const Configuration \&config)
+\begin{DoxyCompactList}\small\item\em Sets up the application environment. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Entry point for the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main entry point of the application. 
+
+This file contains the main function and is responsible for initializing the application, setting up the environment, and starting the primary business logic. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Entry point for the application. 
+
+\begin{DoxyReturn}{Returns}
+Integer 0 upon exit success, non-\/zero on error. 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a9560c03f9cf3233bf8a460b48caa0c93}\index{main.cpp@{main.cpp}!setupEnvironment@{setupEnvironment}}
+\index{setupEnvironment@{setupEnvironment}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{setupEnvironment()}{setupEnvironment()}}
+{\footnotesize\ttfamily \label{main_8cpp_a9560c03f9cf3233bf8a460b48caa0c93} 
+bool setup\+Environment (\begin{DoxyParamCaption}\item[{const Configuration \&}]{config}{}\end{DoxyParamCaption})}
+
+
+
+Sets up the application environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & Configuration settings used for environment setup. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if setup is successful, false otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & Throws an exception if setup fails critically. \\
+\hline
+\end{DoxyExceptions}

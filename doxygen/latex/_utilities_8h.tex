@@ -1,0 +1,42 @@
+\doxysection{code/\+Utilities.h File Reference}
+\hypertarget{_utilities_8h}{}\label{_utilities_8h}\index{code/Utilities.h@{code/Utilities.h}}
+
+
+Provides utility functions used throughout the application.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{_utilities_8h_a233792dfb229dfb76da86d95fd5dc81b}{split}} (const std\+::string \&str, char delimiter)
+\begin{DoxyCompactList}\small\item\em Splits a string into substrings based on the specified delimiter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides utility functions used throughout the application. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_utilities_8h_a233792dfb229dfb76da86d95fd5dc81b}\index{Utilities.h@{Utilities.h}!split@{split}}
+\index{split@{split}!Utilities.h@{Utilities.h}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{_utilities_8h_a233792dfb229dfb76da86d95fd5dc81b} 
+std\+::vector$<$ std\+::string $>$ split (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str}{, }\item[{char}]{delimiter}{}\end{DoxyParamCaption})}
+
+
+
+Splits a string into substrings based on the specified delimiter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string to split. \\
+\hline
+{\em delimiter} & The character used to split the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of substrings. 
+\end{DoxyReturn}

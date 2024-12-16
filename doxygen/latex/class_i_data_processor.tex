@@ -1,0 +1,52 @@
+\doxysection{IData\+Processor Interface Reference}
+\hypertarget{class_i_data_processor}{}\label{class_i_data_processor}\index{IDataProcessor@{IDataProcessor}}
+
+
+Interface for data processing across different modules.  
+
+
+
+
+{\ttfamily \#include $<$Common\+Interfaces.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \mbox{\hyperlink{class_i_data_processor_a5d9ddd385c2ad9352ea7844e11e59794}{process}} (const std\+::string \&data)=0
+\begin{DoxyCompactList}\small\item\em Process data and return the results. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for data processing across different modules. 
+
+This interface defines a set of methods for data processing that all concrete processors must implement, ensuring consistency across different parts of the application. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_data_processor_a5d9ddd385c2ad9352ea7844e11e59794}\index{IDataProcessor@{IDataProcessor}!process@{process}}
+\index{process@{process}!IDataProcessor@{IDataProcessor}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{class_i_data_processor_a5d9ddd385c2ad9352ea7844e11e59794} 
+virtual std\+::string IData\+Processor\+::process (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Process data and return the results. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to be processed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Processed data. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Data\+Processing\+Exception} & if data cannot be processed. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/\mbox{\hyperlink{_common_interfaces_8h}{Common\+Interfaces.\+h}}\end{DoxyCompactItemize}
